@@ -1,3 +1,3 @@
-![tear](https://github.com/user-attachments/assets/f135de62-ccf8-45fd-af85-9bb21159277f)
+![tear](https://github.com/user-attachments/assets/914735ad-a1e1-438d-8035-da2b5d90f72d)
 # Light-A-Video
 Light-A-Video: Training-free Video Relighting via Progressive Light Fusion
