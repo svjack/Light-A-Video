@@ -19,8 +19,6 @@ from utils.tools import read_video, read_mask,set_all_seed, get_fg_video
 
 def main(args):
     
-    os.environ["CUDA_VISIBLE_DEVICES"] = args.visible_gpu or str(os.getenv('CUDA_VISIBLE_DEVICES', 0))
-    
     config  = OmegaConf.load(args.config)
     device = torch.device('cuda')
     adopted_dtype = torch.float16
@@ -244,13 +242,11 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("--sd_model", type=str, 
-        default="/mnt/petrelfs/zhouyujie/hwfile/ckpt/models--stablediffusionapi--realistic-vision-v51/snapshots/19e3643d7d963c156d01537188ec08f0b79a514a")
+    parser.add_argument("--sd_model", type=str, default="stablediffusionapi/realistic-vision-v51")
     parser.add_argument("--motion_adapter_model", type=str, default="guoyww/animatediff-motion-adapter-v1-5-3")
-    parser.add_argument("--ic_light_model", type=str, default="/mnt/petrelfs/zhouyujie/IC-Light/models/iclight_sd15_fc.safetensors")
+    parser.add_argument("--ic_light_model", type=str, default="./models/iclight_sd15_fc.safetensors")
     
     parser.add_argument("--config", type=str, default="configs/relight_inpaint/car.yaml")
-    parser.add_argument("--visible_gpu", type=str, default=None)
     
     args = parser.parse_args()
     main(args)

@@ -10,6 +10,7 @@ from transformers import CLIPTextModel, CLIPTokenizer
 from diffusers import MotionAdapter, EulerAncestralDiscreteScheduler, AutoencoderKL
 from diffusers import AutoencoderKL, UNet2DConditionModel, DPMSolverMultistepScheduler
 from diffusers.models.attention_processor import AttnProcessor2_0
+from torch.hub import download_url_to_file
 
 from src.ic_light import BGSource
 from src.animatediff_pipe import AnimateDiffVideoToVideoPipeline
@@ -17,8 +18,6 @@ from src.ic_light_pipe import StableDiffusionImg2ImgPipeline
 from utils.tools import read_video, set_all_seed
 
 def main(args):
-    
-    os.environ["CUDA_VISIBLE_DEVICES"] = args.visible_gpu or str(os.getenv('CUDA_VISIBLE_DEVICES', 0))
     
     config  = OmegaConf.load(args.config)
     device = torch.device('cuda')
@@ -65,6 +64,10 @@ def main(args):
     unet.forward = hooked_unet_forward
 
     ## ic-light model loader
+    if not os.path.exists(args.ic_light_model):
+        download_url_to_file(url='https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fc.safetensors', 
+                             dst=args.ic_light_model)
+    
     sd_offset = sf.load_file(args.ic_light_model)
     sd_origin = unet.state_dict()
     sd_merged = {k: sd_origin[k] + sd_offset[k] for k in sd_origin.keys()}
@@ -227,13 +230,11 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     
-    parser.add_argument("--sd_model", type=str, 
-        default="/mnt/petrelfs/zhouyujie/hwfile/ckpt/models--stablediffusionapi--realistic-vision-v51/snapshots/19e3643d7d963c156d01537188ec08f0b79a514a")
+    parser.add_argument("--sd_model", type=str, default="stablediffusionapi/realistic-vision-v51")
     parser.add_argument("--motion_adapter_model", type=str, default="guoyww/animatediff-motion-adapter-v1-5-3")
-    parser.add_argument("--ic_light_model", type=str, default="/mnt/petrelfs/zhouyujie/IC-Light/models/iclight_sd15_fc.safetensors")
+    parser.add_argument("--ic_light_model", type=str, default="./models/iclight_sd15_fc.safetensors")
     
     parser.add_argument("--config", type=str, default="configs/relight/car.yaml")
-    parser.add_argument("--visible_gpu", type=str, default=None)
     
     args = parser.parse_args()
     main(args)

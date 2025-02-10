@@ -48,8 +48,7 @@ while maintaining the image quality,  ensuring coherent lighting transitions acr
 
 **[2025/2/11]** Code is available now!
 
-**[2025/2/10]** The [paper]([ShareGPT4V.pdf](https://arxiv.org/pdf/2311.12793.pdf)) and
- [project page](https://bujiazi.github.io/light-a-video.github.io/) are released!
+**[2025/2/10]** The paper and project page are released!
 
 ## 🏗️ Todo
 [ ] Release Light-A-Video code with CogVideo-2B pipeline.
@@ -72,7 +71,7 @@ for smooth appearance transitions.
 
 ### Setup repository and conda environment
 
-```
+```bash
 git clone https://github.com/bcmi/Light-A-Video.git
 cd Light-A-Video
 
@@ -83,29 +82,32 @@ pip install -r requirements.txt
 ```
 
 ## 🔑 Pretrained Model Preparations
-
-### Download IC-Light Model
-
-### Prepare Community Models
-
-### Prepare AnimateDiff Motion Modules
+- IC-Light: [Huggingface Link](https://huggingface.co/lllyasviel/ic-light)
+- SD RealisticVision: [Huggingface Link](https://huggingface.co/stablediffusionapi/realistic-vision-v51)
+- Animatediff Motion-Adapter-V-1.5.3: [Huggingface Link](https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-3)
+Model downloading is automatic.
 
 ## 🎈 Quick Start
 
 ### Perform video relighting with customized illumination control
-```
+```bash
+# relight
 python lav_relight.py --config "configs/relight/car.yaml"
 ```
 ### Perform foreground sequences relighting with background generation
-```
+a script based on [SAM2](https://github.com/facebookresearch/sam2) is provided to extract foreground sequences from videos. 
+```bash
+# extract foreground sequence
+python sam2.py --video_name car --x 255 --y 255
+
+# inpaint and relight
 python lav_paint.py --config "configs/relight_inpaint/car.yaml"
 ```
 
 ## 📎 Citation 
 
-If you find this work helpful, please cite the following paper:
-
-```
+If you find our work helpful for your research, please consider giving a star ⭐ and citation 📝
+```bibtex
 @article{ling2024motionclone,
   title={MotionClone: Training-Free Motion Cloning for Controllable Video Generation},
   author={Ling, Pengyang and Bu, Jiazi and Zhang, Pan and Dong, Xiaoyi and Zang, Yuhang and Wu, Tong and Chen, Huaian and Wang, Jiaqi and Jin, Yi},
