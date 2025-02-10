@@ -10,6 +10,7 @@ This repository is the official implementation of Light-A-Video. It is a **train
 zero-shot illumination control of any given video sequences or foreground sequences.
 
 <details><summary>Click for the full abstract of Light-A-Video</summary>
+
 > Recent advancements in image relighting models, driven by large-scale datasets and pre-trained diffusion models, 
 have enabled the imposition of consistent lighting. 
 However, video relighting still lags, primarily due to the excessive training costs and the scarcity of diverse, high-quality video relighting datasets.
@@ -82,9 +83,10 @@ pip install -r requirements.txt
 ```
 
 ## 🔑 Pretrained Model Preparations
-- IC-Light: [Huggingface Link](https://huggingface.co/lllyasviel/ic-light)
-- SD RealisticVision: [Huggingface Link](https://huggingface.co/stablediffusionapi/realistic-vision-v51)
-- Animatediff Motion-Adapter-V-1.5.3: [Huggingface Link](https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-3)
+- IC-Light: [Huggingface](https://huggingface.co/lllyasviel/ic-light)
+- SD RealisticVision: [Huggingface](https://huggingface.co/stablediffusionapi/realistic-vision-v51)
+- Animatediff Motion-Adapter-V-1.5.3: [Huggingface](https://huggingface.co/guoyww/animatediff-motion-adapter-v1-5-3)
+
 Model downloading is automatic.
 
 ## 🎈 Quick Start
