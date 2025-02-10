@@ -62,7 +62,7 @@ We show more results in the [Project Page](https://bujiazi.github.io/light-a-vid
       <td><p style="text-align: center">input video</p></td>
       <td><p style="text-align: center">red and blue neon light</p></td>
       <td><p style="text-align: center">input foreground sequence</p></td>
-      <td><p style="text-align: center">in the forest, magic golden lit</p></td>
+      <td><p style="text-align: center">forest, magic golden lit</p></td>
     </tr>
     <tr>
     <td><img src="__assets__/cat.gif"></td>
