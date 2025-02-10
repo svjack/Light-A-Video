@@ -1,9 +1,7 @@
 <div align="center">
     <img src='__assets__/title.png'/>
 </div>
-⭐️ **Our team's works:** 
-[[**MotionClone**](https://bujiazi.github.io/motionclone.github.io//)]
-[[**BroadWay**](https://bujiazi.github.io/BroadWay.github.io/)]  
+⭐️ **Our team's works:** [[**MotionClone**](https://bujiazi.github.io/motionclone.github.io//)]  [[**BroadWay**](https://bujiazi.github.io/BroadWay.github.io/)]  
 
 # Light-A-Video: Training-free Video Relighting via Progressive Light Fusion
 This repository is the official implementation of Light-A-Video. It is a **training-free framework** that enables 
