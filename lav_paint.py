@@ -246,7 +246,7 @@ if __name__ == "__main__":
     parser.add_argument("--motion_adapter_model", type=str, default="guoyww/animatediff-motion-adapter-v1-5-3")
     parser.add_argument("--ic_light_model", type=str, default="./models/iclight_sd15_fc.safetensors")
     
-    parser.add_argument("--config", type=str, default="configs/relight_inpaint/car.yaml")
+    parser.add_argument("--config", type=str, default="configs/relight_inpaint/car.yaml", help="the config file for each sample.")
     
     args = parser.parse_args()
     main(args)
