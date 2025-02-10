@@ -67,11 +67,11 @@ We show more results in the [Project Page](https://bujiazi.github.io/light-a-vid
       <td><img src="__assets__/boat_light.gif"></td>
     </tr>
     <tr>
-      <td><p style="text-align: center">..., sunshine from window</p></td>
+      <td><p style="text-align: center">..., sunlight through the blinds</p></td>
       <td><p style="text-align: center">..., in the forest, magic golden lit</p></td>
     </tr>
     <tr>
-      <td><img src="__assets__/dog_light.gif"></td>
+      <td><img src="__assets__/man_light.gif"></td>
       <td><img src="__assets__/water_light.gif"></td>
     </tr>
 </table>
