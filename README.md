@@ -52,7 +52,7 @@ while maintaining the image quality,  ensuring coherent lighting transitions acr
 **[2025/2/10]** The paper and project page are released!
 
 ## 🏗️ Todo
-- [] Release Light-A-Video code with CogVideo-2B pipeline.
+- [ ] Release Light-A-Video code with CogVideo-2B pipeline.
 
 ## 📚 Gallery
 We show more results in the [Project Page](https://bujiazi.github.io/light-a-video.github.io/).
