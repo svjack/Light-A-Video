@@ -57,6 +57,21 @@ while maintaining the image quality,  ensuring coherent lighting transitions acr
 ## 📚 Gallery
 We show more results in the [Project Page](https://bujiazi.github.io/light-a-video.github.io/).
 
+<table class="center">
+    <tr>
+      <td><p style="text-align: center">input video</p></td>
+      <td><p style="text-align: center">red and blue neon light</p></td>
+      <td><p style="text-align: center">input foreground sequence</p></td>
+      <td><p style="text-align: center">in the forest, magic golden lit</p></td>
+    </tr>
+    <tr>
+    <td><img src="__assets__/cat.gif"></td>
+    <td><img src="__assets__/cat_relight.gif"></td>
+    <td><img src="__assets__/water.gif"></td>
+    <td><img src="__assets__/water_relight.gif"></td>
+    </tr>
+</table>
+
 
 ## 🚀 Method Overview
 
