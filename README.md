@@ -60,11 +60,19 @@ We show more results in the [Project Page](https://bujiazi.github.io/light-a-vid
 <table class="center">
     <tr>
       <td><p style="text-align: center">..., red and blue neon light</p></td>
+      <td><p style="text-align: center">..., sunset over sea</p></td>
+    </tr>
+    <tr>
+      <td><img src="__assets__/cat_light.gif"></td>
+      <td><img src="__assets__/boat_light.gif"></td>
+    </tr>
+    <tr>
+      <td><p style="text-align: center">..., sunshine from window</p></td>
       <td><p style="text-align: center">..., in the forest, magic golden lit</p></td>
     </tr>
     <tr>
-      <td><img src="__assets__/cat.gif"></td>
-      <td><img src="__assets__/water.gif"></td>
+      <td><img src="__assets__/dog_light.gif"></td>
+      <td><img src="__assets__/water_light.gif"></td>
     </tr>
 </table>
 
