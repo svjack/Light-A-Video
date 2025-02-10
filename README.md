@@ -52,7 +52,7 @@ while maintaining the image quality,  ensuring coherent lighting transitions acr
 **[2025/2/10]** The paper and project page are released!
 
 ## 🏗️ Todo
-- [ ] Release Light-A-Video code with CogVideo-2B pipeline.
+- [ ] Release Light-A-Video code with CogVideoX-2B pipeline.
 
 ## 📚 Gallery
 We show more results in the [Project Page](https://bujiazi.github.io/light-a-video.github.io/).
@@ -65,10 +65,10 @@ We show more results in the [Project Page](https://bujiazi.github.io/light-a-vid
 </div>
 
 Light-A-Video leverages the the capabilities of image relighting models and VDM motion priors to achieve temporally consistent video relighting. 
-By integrating the Consistent Light Attention to stabilize lighting source generation and employ the Progressive Light Fusion strategy
+By integrating the **Consistent Light Attention** to stabilize lighting source generation and employ the **Progressive Light Fusion** strategy
 for smooth appearance transitions.
 
-## 🔧 Installations (python==3.10 recommended)
+## 🔧 Installations
 
 ### Setup repository and conda environment
 
@@ -97,7 +97,7 @@ Model downloading is automatic.
 python lav_relight.py --config "configs/relight/car.yaml"
 ```
 ### Perform foreground sequences relighting with background generation
-a script based on [SAM2](https://github.com/facebookresearch/sam2) is provided to extract foreground sequences from videos. 
+A script based on [SAM2](https://github.com/facebookresearch/sam2) is provided to extract foreground sequences from videos. 
 ```bash
 # extract foreground sequence
 python sam2.py --video_name car --x 255 --y 255
@@ -128,3 +128,4 @@ Feel free to contact us if you would like remove them.
 The code is built upon the below repositories, we thank all the contributors for open-sourcing.
 * [IC-Light](https://github.com/lllyasviel/IC-Light)
 * [AnimateDiff](https://github.com/guoyww/AnimateDiff)
+* [CogVideoX](https://github.com/THUDM/CogVideo)
