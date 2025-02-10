@@ -129,12 +129,7 @@ python lav_paint.py --config "configs/relight_inpaint/car.yaml"
 
 If you find our work helpful for your research, please consider giving a star ⭐ and citation 📝
 ```bibtex
-@article{ling2024motionclone,
-  title={MotionClone: Training-Free Motion Cloning for Controllable Video Generation},
-  author={Ling, Pengyang and Bu, Jiazi and Zhang, Pan and Dong, Xiaoyi and Zang, Yuhang and Wu, Tong and Chen, Huaian and Wang, Jiaqi and Jin, Yi},
-  journal={arXiv preprint arXiv:2406.05338},
-  year={2024}
-}
+
 ```
 
 ## 📣 Disclaimer
