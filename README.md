@@ -54,6 +54,10 @@ while maintaining the image quality,  ensuring coherent lighting transitions acr
 ## 🏗️ Todo
 [ ] Release Light-A-Video code with CogVideo-2B pipeline.
 
+## 📚 Gallery
+We show more results in the [Project Page](https://bujiazi.github.io/light-a-video.github.io/).
+
+
 ## 🚀 Method Overview
 
 <div align="center">
@@ -61,6 +65,8 @@ while maintaining the image quality,  ensuring coherent lighting transitions acr
 </div>
 
 Light-A-Video leverages the the capabilities of image relighting models and VDM motion priors to achieve temporally consistent video relighting. 
+By integrating the Consistent Light Attention to stabilize lighting source generation and employ the Progressive Light Fusion strategy
+for smooth appearance transitions.
 
 ## 🔧 Installations (python==3.10 recommended)
 
