@@ -20,7 +20,7 @@ In this work, we propose Light-A-Video, a training-free approach to achieve temp
 Adapted from image relighting models, Light-A-Video introduces two key techniques to enhance lighting consistency.
 First, we design a Consistent Light Attention (CLA) module, which enhances cross-frame interactions within the self-attention layers 
 to stabilize the generation of the background lighting source. Second, leveraging the physical principle of light transport independence, 
-we apply linear blending between the source video’s appearance and the relighted appearance, using a Progressive Light Fusion \textbf{(PLF)} strategy to ensure smooth temporal transitions in illumination. 
+we apply linear blending between the source video’s appearance and the relighted appearance, using a Progressive Light Fusion (PLF) strategy to ensure smooth temporal transitions in illumination. 
 Experiments show that Light-A-Video improves the temporal consistency of relighted video
 while maintaining the image quality,  ensuring coherent lighting transitions across frames.
 </details>
