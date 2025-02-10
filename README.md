@@ -127,7 +127,7 @@ python lav_paint.py --config "configs/relight_inpaint/car.yaml"
 
 ## 📎 Citation 
 
-If you find our work helpful for your research, please consider giving a star ⭐ and citation 📝
+If you find our work helpful for your research, please consider giving a star ⭐
 ```bibtex
 
 ```
