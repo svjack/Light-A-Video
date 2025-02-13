@@ -52,6 +52,8 @@ while maintaining the image quality,  ensuring coherent lighting transitions acr
 **[2025/2/10]** The paper and project page are released!
 
 ## 🏗️ Todo
+- [ ] Release a gadio demo.
+
 - [ ] Release Light-A-Video code with CogVideoX-2B pipeline.
 
 ## 📚 Gallery
