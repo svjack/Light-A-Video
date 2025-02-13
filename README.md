@@ -32,12 +32,12 @@ while maintaining the image quality,  ensuring coherent lighting transitions acr
 [Pengyang Ling*](https://github.com/LPengYang/),
 [Pan Zhang<sup>†</sup>](https://panzhang0212.github.io/),
 [Tong Wu](https://wutong16.github.io/),
-[Qidong Huang](https://shikiw.github.io/)
-[Jinsong Li](https://li-jinsong.github.io/)
+[Qidong Huang](https://shikiw.github.io/),
+[Jinsong Li](https://li-jinsong.github.io/),
 [Xiaoyi Dong](https://scholar.google.com/citations?user=FscToE0AAAAJ&hl=en/),
 [Yuhang Zang](https://yuhangzang.github.io/),
-[Yuhang Cao](https://scholar.google.com/citations?hl=zh-CN&user=sJkqsqkAAAAJ)
-[Anyi Rao](https://anyirao.com/)
+[Yuhang Cao](https://scholar.google.com/citations?hl=zh-CN&user=sJkqsqkAAAAJ),
+[Anyi Rao](https://anyirao.com/),
 [Jiaqi Wang](https://myownskyw7.github.io/),
 [Li Niu<sup>†</sup>](https://www.ustcnewly.com/)  
 (*Equal Contribution)(<sup>†</sup>Corresponding Author)
