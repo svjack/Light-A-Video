@@ -42,7 +42,7 @@ while maintaining the image quality,  ensuring coherent lighting transitions acr
 [Li Niu<sup>†</sup>](https://www.ustcnewly.com/)  
 (*Equal Contribution)(<sup>†</sup>Corresponding Author)
 
-[![arXiv](https://img.shields.io/badge/arXiv-2406.05338-b31b1b.svg)](https://arxiv.org/abs/2406.05338)
+[![arXiv](https://img.shields.io/badge/arXiv-2502.08590-b31b1b.svg)](https://arxiv.org/abs/2502.08590)
 [![Project Page](https://img.shields.io/badge/Project-Website-green)](https://bujiazi.github.io/light-a-video.github.io/)
 
 ## 📜 News
