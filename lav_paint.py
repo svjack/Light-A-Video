@@ -10,6 +10,7 @@ from transformers import CLIPTextModel, CLIPTokenizer
 from diffusers import MotionAdapter, EulerAncestralDiscreteScheduler, AutoencoderKL
 from diffusers import AutoencoderKL, UNet2DConditionModel, DPMSolverMultistepScheduler
 from diffusers.models.attention_processor import AttnProcessor2_0
+from torch.hub import download_url_to_file
 
 from src.ic_light import BGSource
 from src.ic_light import Relighter
@@ -64,6 +65,9 @@ def main(args):
     unet.forward = hooked_unet_forward
 
     ## ic-light model loader
+    if not os.path.exists(args.ic_light_model):
+        download_url_to_file(url='https://huggingface.co/lllyasviel/ic-light/resolve/main/iclight_sd15_fc.safetensors', 
+                             dst=args.ic_light_model)
     sd_offset = sf.load_file(args.ic_light_model)
     sd_origin = unet.state_dict()
     sd_merged = {k: sd_origin[k] + sd_offset[k] for k in sd_origin.keys()}
