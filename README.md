@@ -2,6 +2,27 @@
     <img src='__assets__/title.png'/>
 </div>
 
+```bash
+sudo apt-get update && sudo apt-get install git-lfs ffmpeg cbm
+
+git clone https://github.com/svjack/Light-A-Video
+cd Light-A-Video
+
+conda create -n lav python=3.10
+conda activate lav
+pip install ipykernel
+python -m ipykernel install --user --name lav --display-name "lav"
+
+pip install -r requirements.txt
+
+git clone https://huggingface.co/lllyasviel/ic-light
+cp -r ic-light/*  ./models
+
+python lav_relight.py --config "configs/relight/car.yaml"
+
+python lav_relight_cmd.py --relight_prompt "a man talking, neon light" --video_path ""
+```
+
 ---
 ### ⭐️ **Our team's works:** [[**MotionClone**](https://bujiazi.github.io/motionclone.github.io/)]  [[**BroadWay**](https://bujiazi.github.io/BroadWay.github.io/)] 
 
